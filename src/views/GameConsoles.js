@@ -1,17 +1,18 @@
-
 import React from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const GameCharacters = () => {
+
+
+const GameConsoles = () => {
 
     return (
         <section>
-            <h3>All game characters</h3>
+            <h3>Alle Nintendo konsoler</h3>
             
         </section>
     )
 }
 
-export default GameCharacters;
+export default GameConsoles;
