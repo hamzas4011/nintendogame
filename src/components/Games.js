@@ -8,4 +8,5 @@ const Games = ( { title, category, image, price }) => {
     )
 }
 
-export default Monster;
+export default Games;
+
