@@ -6,17 +6,17 @@ const AllGames = () => {
 
     
  const [ games, setGames ] = useState( 
-     [ { id: "", name: "", age: "", image: ""} ] 
+     [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
  );
  
  
       useEffect( () => {
           const url = "https://localhost:5001/games";
-           axios.get(  url )
+           axios.get( url )
                .then( response => { 
                    setGames( response.data  );
                })
-    }, [] )
+    }, [])
 
 
 
@@ -28,7 +28,8 @@ const AllGames = () => {
  
      return (
          <section>
-             <h3>Alle monstre</h3>
+             <h3>Alle Nitendo games</h3>
+             <p>Antall Games: { games.length }</p>  
              { getGames() }
          </section>
      )

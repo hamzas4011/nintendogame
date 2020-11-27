@@ -1,10 +1,11 @@
 
-const Game = ( { id, title, category, image, price }) => {
+const Game = ( { id, name, category, price, image}) => {
     return (
         <article>
-            <h3>{ title } (id: { id }) </h3>
+            <h3>{ name } (id: { id }) </h3>
             <p>Kategori: { category } </p>
-            
+            <p>Price: { price }</p>
+            <img asrc={`https://localhost:5001/images/${image}`}/>
         </article>
     )
 }
