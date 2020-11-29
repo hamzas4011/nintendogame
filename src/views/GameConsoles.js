@@ -28,8 +28,8 @@ const GameConsoles = () => {
     
         return (
             <section>
-                <h3>Alle Nitendo Consoles</h3>
-                <p>Antall Games: { consoles.length }</p>  
+                <h3>Alle Nintendo konsoller</h3>
+                <p>Antall konsoller: { consoles.length }</p>  
                 
                 { getConsoles() }
             </section>

@@ -5,7 +5,7 @@ const Game = ( { id, name, category, price, image}) => {
             <h3>{ name } (id: { id }) </h3>
             <p>Kategori: { category } </p>
             <p>Price: { price }</p>
-            <img asrc={`https://localhost:5001/images/${image}`}/>
+            <img src={`https://localhost:5001/images/${image}`}/>
         </article>
     )
 }

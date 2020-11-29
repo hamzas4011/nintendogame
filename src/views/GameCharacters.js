@@ -1,17 +1,43 @@
-
-import React from 'react';
-
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { useState, useEffect } from 'react';
+import Character from '../components/Character';
+import axios from 'axios';
 
 const GameCharacters = () => {
 
-    return (
-        <section>
-            <h3>All game characters</h3>
-            
-        </section>
-    )
-}
-
-export default GameCharacters;
+    
+    const [ characters, setCharacters ] = useState( 
+        [ { id: "22", name: "ss", age: "2008", weapon:"33", strength: "jump", image: "mummy.png"} ] 
+    );
+    
+    
+         useEffect( () => {
+             const url = "https://localhost:5001/characters";
+              axios.get( url )
+                  .then( response => { 
+                      setCharacters( response.data  );
+                  })
+       }, [])
+   
+   
+   
+    const getCharacters = () => {
+          return characters.map( ( character, i ) => {
+              return <Character key={ i } { ...character }></Character>
+          });
+    }
+    
+        return (
+            <section>
+                <h3>Alle Nintendo Spillfigurer</h3>
+                <p>Antall Spillfigurer: { characters.length }</p>    
+                { getCharacters() }
+            </section>
+        )
+   
+   }
+   
+   export default GameCharacters;
+   
+   
+   
+   

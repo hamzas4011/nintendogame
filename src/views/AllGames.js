@@ -28,8 +28,8 @@ const AllGames = () => {
  
      return (
          <section>
-             <h3>Alle Nitendo games</h3>
-             <p>Antall Games: { games.length }</p>  
+             <h3>Alle Nintendo Spill</h3>
+             <p>Antall Spill: { games.length }</p>  
              { getGames() }
          </section>
      )

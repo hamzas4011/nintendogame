@@ -14,9 +14,6 @@ import GameConsoles from '../views/GameConsoles';
 import AllGames from '../views/AllGames';
 
 // Admin sidene blir henta her
-import AllGamesAdmin from '../views/AllGamesAdmin';
-import GameCharactersAdmin from '../views/GameCharactersAdmin';
-import GameConsolesAdmin from '../views/GameConsolesAdmin';
 import AllGamesAdminUpdate from '../views/AllGamesAdminUpdate';
 import AllGamesAdminDelete from '../views/AllGamesAdminDelete';
 import AllGamesAdminAdd from '../views/AllGamesAdminAdd';
@@ -40,10 +37,6 @@ const Routes = () => {
 
           
             <Navbar bg="danger" variant="dark" className="mr-auto">
-            <Nav.Link as={Link} to="/allgamesadmin">Alle spill admin</Nav.Link>
-            <Nav.Link as={Link} to="/gamecharactersadmin">Alle spillfigurer admin</Nav.Link>
-            <Nav.Link as={Link} to="/gameconsolesadmin">Alle spill konsoler admin</Nav.Link>
-            
             <Nav.Link as={Link} to="/allgamesadminupdate">Rediger alle spill</Nav.Link>
             <Nav.Link as={Link} to="/allgamesadmindelete">Slett alle spill</Nav.Link>
             <Nav.Link as={Link} to="/allgamesadminadd">Legg til alle spill</Nav.Link>
@@ -66,10 +59,6 @@ const Routes = () => {
     <Route path="/gameconsoles" component={ GameConsoles }></Route>
 
      
-    <Route path="/allgamesadmin" component={ AllGamesAdmin }></Route>
-    <Route path="/gamecharactersadmin" component={ GameCharactersAdmin }></Route>
-    <Route path="/gameconsolesadmin" component={ GameConsolesAdmin }></Route>
-
     <Route path="/allgamesadminupdate" component={ AllGamesAdminUpdate }></Route>
     <Route path="/allgamesadmindelete" component={ AllGamesAdminDelete }></Route>
     <Route path="/allgamesadminadd" component={ AllGamesAdminAdd }></Route>
