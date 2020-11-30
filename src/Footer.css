@@ -1,11 +1,31 @@
 
 .main-footer {
+ 
+  color: white;
+  background-color: #dc3545;
+   position: relative;
+   left: 0;
+   bottom: -25.2em;
+   width: 100%;
+   margin-top: 1em;
+   padding: 1em;
+  
+  
+}
+
+
+
+
+/*
+.main-footer {
     margin-top: 1rem;
   padding: 1rem;
   color: white;
   background-color: rgb(240, 63, 63);
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   width: 100%;
 }
+
+*/

@@ -15,3 +15,4 @@ const AllGamesAdminUpdate = () => {
 }
 
 export default AllGamesAdminUpdate;
+

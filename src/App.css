@@ -13,6 +13,15 @@
   }
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5em;
+}
+
 
 
 .App-header {
@@ -24,6 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 10vh;
 }
 
 .App-link {

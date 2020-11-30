@@ -38,7 +38,7 @@ const Routes = () => {
           
             <Navbar bg="danger" variant="dark" className="mr-auto">
             <Nav.Link as={Link} to="/allgamesadminupdate">Rediger alle spill</Nav.Link>
-            <Nav.Link as={Link} to="/allgamesadmindelete">Slett alle spill</Nav.Link>
+            <Nav.Link as={Link} to="/allgamesadmindelete">Slett spill</Nav.Link>
             <Nav.Link as={Link} to="/allgamesadminadd">Legg til alle spill</Nav.Link>
             
             </Navbar>
