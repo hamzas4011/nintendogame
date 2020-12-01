@@ -28,6 +28,7 @@ const Routes = () => {
 
         <Navbar bg="danger" variant="dark" className="mb-5">
           <Navbar.Brand>Nintendo gaming</Navbar.Brand>
+          
           <Nav>
             <Nav.Link as={Link} to="/">Hjem</Nav.Link>
             <Nav.Link as={Link} to="/allgames">Alle spill</Nav.Link>
@@ -36,8 +37,8 @@ const Routes = () => {
              
 
           
-            <Navbar bg="danger" variant="dark" className="mr-auto">
-            <Nav.Link as={Link} to="/allgamesadminupdate">Rediger alle spill</Nav.Link>
+            <Navbar bg="dark" variant="dark" className="mr-auto">
+            <Nav.Link  as={Link} to="/allgamesadminupdate">Rediger alle spill</Nav.Link>
             <Nav.Link as={Link} to="/allgamesadmindelete">Slett spill</Nav.Link>
             <Nav.Link as={Link} to="/allgamesadminadd">Legg til alle spill</Nav.Link>
             

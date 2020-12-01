@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 import Game from '../components/Game';
 import axios from 'axios';
-
+import { Row } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
+import Media from 'react-bootstrap/Media'
 const AllGames = () => {
 
     
- const [ games, setGames ] = useState( 
+ const [ games, setGames ] = useState(
      [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
  );
- 
+
+
  
       useEffect( () => {
           const url = "https://localhost:5001/games";
@@ -30,9 +33,23 @@ const AllGames = () => {
          <section>
              <h3>Alle Nintendo Spill</h3>
              <p>Antall Spill: { games.length }</p>  
-             { getGames() }
+             <Media>
+            <img alt=""
+             width={1000}/>       
+            <Row xs={2}>
+            {getGames()}
+            <Col></Col>
+
+  </Row>
+  </Media>
+    
+    
+
+
          </section>
      )
+
+
 
 }
 

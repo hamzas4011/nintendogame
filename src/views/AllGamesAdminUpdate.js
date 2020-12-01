@@ -1,14 +1,19 @@
 
 import React from 'react';
+import { GameProvider } from '../contexts/GameContext';
+import GameUpdate from '../components/GameUpdate';
+import Game from '../components/Game';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const AllGamesAdminUpdate = () => {
 
     return (
         <section>
             <h3>Rediger spillfigurer admin</h3>
+            <GameProvider>
+                <Game></Game>
+                <GameUpdate></GameUpdate>
+            </GameProvider>
             
         </section>
     )
