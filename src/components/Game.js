@@ -1,4 +1,5 @@
 
+
 const Game = ( { id, name, category, price, image}) => {
     return (
         <article>
