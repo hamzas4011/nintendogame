@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { BrowserRouter , Switch, Route, Link } from 'react-router-dom';
+import { NavDropdown } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
@@ -11,14 +12,13 @@ import Nav from 'react-bootstrap/Nav';
 import GameCharacters from '../views/GameCharacters';
 import GameConsoles from '../views/GameConsoles';
 import AllGames from '../views/AllGames';
+import Home from '../views/Home';
 
 // Admin sidene blir henta her
 import AllGamesAdminDelete from '../views/AllGamesAdminDelete';
 import AllGamesAdminAdd from '../views/AllGamesAdminAdd';
 
 import Games from '../views/Games';
-  
-  
   
 const Routes = () => {
 
@@ -29,45 +29,36 @@ const Routes = () => {
           <Navbar.Brand>Nintendo gaming</Navbar.Brand>
           
           <Nav>
-            <Nav.Link as={Link} to="/">Games</Nav.Link>
+            <Nav.Link as={Link} to="/">Hjem</Nav.Link>
             <Nav.Link as={Link} to="/allgames">Alle spill</Nav.Link>
             <Nav.Link as={Link} to="/gamecharacters">Alle spillfigurer</Nav.Link>
             <Nav.Link as={Link} to="/gameconsoles">Alle nintendo konsoller</Nav.Link>
              
-
           
-            <Navbar bg="dark" variant="dark" className="mr-auto">
-            <Nav.Link as={Link} to="/allgamesadmindelete">Slett spill</Nav.Link>
-            <Nav.Link as={Link} to="/allgamesadminadd">Legg til alle spill</Nav.Link>
-            
-            </Navbar>
-
-            
-          </Nav>  
-
+            <Nav className="mr-auto">
+            <NavDropdown title="Admin">
+            <NavDropdown.Item as={Link} to="/allgamesadmindelete">Slett spill</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/allgamesadminadd">Legg til spill</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/gameupdate">Endre spill</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          </Nav>
         </Navbar>
-
-  
-
 <Container>
     <main>
 <Switch>
-    <Route exact path="/" component={ Games }></Route>
+    <Route exact path="/" component={ Home }></Route>
     <Route path="/allgames" component={ AllGames }></Route>
     <Route path="/gamecharacters" component={ GameCharacters }></Route>
     <Route path="/gameconsoles" component={ GameConsoles }></Route>
-
     <Route path="/allgamesadmindelete" component={ AllGamesAdminDelete }></Route>
     <Route path="/allgamesadminadd" component={ AllGamesAdminAdd }></Route>
-
-    
-
+    <Route path="/gameupdate" component={ Games }></Route>
 </Switch>
 </main>
 </Container>
 
 </BrowserRouter>
-
 
   );
 }
