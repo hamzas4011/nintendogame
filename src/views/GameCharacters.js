@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Character from '../components/Character';
 import axios from 'axios';
+import { Row } from 'react-bootstrap';
 
 const GameCharacters = () => {
 
@@ -29,8 +30,10 @@ const GameCharacters = () => {
         return (
             <section>
                 <h3>Alle Nintendo Spillfigurer</h3>
-                <p>Antall Spillfigurer: { characters.length }</p>    
+                <p>Antall Spillfigurer: { characters.length }</p>   
+                <Row xs={3}>
                 { getCharacters() }
+                </Row> 
             </section>
         )
    

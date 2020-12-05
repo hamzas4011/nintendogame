@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Game from '../components/Game';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
-import { Col, Card } from 'react-bootstrap';
+
 
 
 const AllGames = () => {

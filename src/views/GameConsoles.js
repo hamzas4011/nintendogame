@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Console from '../components/Console';
 import axios from 'axios';
+import { Row } from 'react-bootstrap';
 
 const GameConsoles = () => {
 
@@ -30,8 +31,9 @@ const GameConsoles = () => {
             <section>
                 <h3>Alle Nintendo konsoller</h3>
                 <p>Antall konsoller: { consoles.length }</p>  
-                
+                <Row xs={3}>
                 { getConsoles() }
+                </Row>
             </section>
         )
    
