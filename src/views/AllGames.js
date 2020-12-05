@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import Game from '../components/Game';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
-import Col from 'react-bootstrap/Col';
-import Media from 'react-bootstrap/Media'
+import { Col, Card } from 'react-bootstrap';
+
+
 const AllGames = () => {
 
     
@@ -33,16 +34,14 @@ const AllGames = () => {
          <section>
              <h3>Alle Nintendo Spill</h3>
              <p>Antall Spill: { games.length }</p>  
-             <Media>
-            <img alt=""
-             width={1000}/>       
-            <Row xs={2}>
+             <Row xs={3} >
             {getGames()}
-            <Col></Col>
+            </Row>
+        
+           
 
-  </Row>
-  </Media>
-    
+  
+
     
 
 
