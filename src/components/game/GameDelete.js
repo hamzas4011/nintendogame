@@ -1,10 +1,9 @@
-
 import axios from 'axios';
-import AllGamesAdminDelete from '../views/AllGamesAdminDelete';
+import DeleteGames from '../../views/DeleteGames';
 
 const GameDelete = ( props ) => {
 
-     const AllGamesAdminDelete = () => {
+     const DeleteGames = () => {
           const url = "https://localhost:5001/games";
         axios.delete(`${url}/${props.id}`);
      }
@@ -12,7 +11,7 @@ const GameDelete = ( props ) => {
     return (
         <article>
             <h3>{ props.name }</h3>
-            <input onClick={ AllGamesAdminDelete } type="button" value="Slett spill" />
+            <input onClick={ DeleteGames } type="button" value="Slett spill" />
         </article>
     )
 }

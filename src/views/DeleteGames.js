@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
-import GameDelete from '../components/GameDelete';
+import GameDelete from '../components/game/GameDelete';
 import axios from 'axios';
 
-const AllGamesAdminDelete = () => {
+const DeleteGames = () => {
 
     const [ games, setGames ] = useState( 
         [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
     );
-    
-    
          useEffect( () => {
              const url = "https://localhost:5001/games";
               axios.get( url )
@@ -16,8 +14,6 @@ const AllGamesAdminDelete = () => {
                       setGames( response.data  );
                   })
        }, [])
-   
-   
    
     const getGames = () => {
           return games.map( ( game, i ) => {
@@ -37,8 +33,7 @@ const AllGamesAdminDelete = () => {
             </section>
         )
    
-   
 }
 
-export default AllGamesAdminDelete;
+export default DeleteGames;
 

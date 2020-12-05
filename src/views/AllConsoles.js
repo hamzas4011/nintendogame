@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
-import Console from '../components/Console';
+import Console from '../components/console/Console';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 
-const GameConsoles = () => {
+const AllConsoles = () => {
 
     
     const [ consoles, setConsoles ] = useState( 
         [ { id: "22", name: "ss", year: "2008", price:"33", image: "mummy.png"} ] 
     );
-    
     
          useEffect( () => {
              const url = "https://localhost:5001/consoles";
@@ -18,8 +17,6 @@ const GameConsoles = () => {
                       setConsoles( response.data  );
                   })
        }, [])
-   
-   
    
     const getConsoles = () => {
           return consoles.map( ( console, i ) => {
@@ -39,7 +36,7 @@ const GameConsoles = () => {
    
    }
    
-   export default GameConsoles;
+   export default AllConsoles;
    
    
    

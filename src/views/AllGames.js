@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Game from '../components/Game';
+import Game from '../components/game/Game';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 
@@ -7,11 +7,9 @@ import { Row } from 'react-bootstrap';
 
 const AllGames = () => {
 
-    
  const [ games, setGames ] = useState(
      [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
  );
-
 
  
       useEffect( () => {
@@ -21,9 +19,6 @@ const AllGames = () => {
                    setGames( response.data  );
                })
     }, [])
-
-
-
  const getGames = () => {
        return games.map( ( game, i ) => {
            return <Game key={ i } { ...game }></Game>
@@ -37,19 +32,8 @@ const AllGames = () => {
              <Row xs={3} >
             {getGames()}
             </Row>
-        
-           
-
-  
-
-    
-
-
          </section>
      )
-
-
-
 }
 
 export default AllGames;

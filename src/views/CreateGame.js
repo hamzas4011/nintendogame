@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-const AllGamesAdminAdd = () => {
+const CreateGame = () => {
 
     const [ name, setName ] = useState("F");
     const [ category, setCategory ] = useState("A");
@@ -27,7 +27,7 @@ const AllGamesAdminAdd = () => {
         }
     }
 
-    const AllGamesAdminAdd = () => {
+    const CreateGame = () => {
         const url = "https://localhost:5001/games";
         const newGame = { name: name, category: category, price: price, image: image };
 
@@ -45,9 +45,9 @@ const AllGamesAdminAdd = () => {
             <input id="price" onChange={ handleChange } type="number" value={ price }/>
             <label>Bilde</label>
             <input id="image" onChange={ handleChange }type="text" value={ image }/>
-            <input onClick={ AllGamesAdminAdd } type="button" value="Lagre nytt spill"></input> 
+            <input onClick={ CreateGame } type="button" value="Lagre nytt spill"></input> 
         </section>
     )
 }
 
-export default AllGamesAdminAdd;
+export default CreateGame;

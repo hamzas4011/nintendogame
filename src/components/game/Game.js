@@ -1,6 +1,4 @@
-
 import { Col, Card } from 'react-bootstrap';
-
 
 const Game = ( { id, name, category, price, image}) => {
     return (
@@ -19,7 +17,5 @@ const Game = ( { id, name, category, price, image}) => {
 
     )
 }
-
-
 export default Game;
 

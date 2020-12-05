@@ -24,7 +24,7 @@ const GameUpdate = () => {
     return (
         <section>
             <h3>Endre Spill</h3>
-            <p>Klikk først på Oppdater-knappen til et av komponentene under, deretter kan du endre på navnet på skipet.</p>
+            <p>Klikk først på Oppdater-knappen til et av komponentene under, deretter kan du endre på navnet på spillet.</p>
             <label>Navn</label>
             <input 
             onChange={ (e) => setGame( {...gameState, name: e.target.value } ) } type="text" value={ gameState.name }></input>
