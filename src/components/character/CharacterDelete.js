@@ -6,7 +6,7 @@ import { Col, Card, Button } from 'react-bootstrap';
 const CharacterDelete = ( props ) => {
 
      const DeleteCharacter = () => {
-          const url = "https://localhost:5001/games";
+          const url = "https://localhost:5001/characters";
         axios.delete(`${url}/${props.id}`);
      }
 
