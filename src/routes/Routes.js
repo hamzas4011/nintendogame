@@ -27,6 +27,9 @@ const Routes = () => {
       <BrowserRouter>
 
         <Navbar bg="danger" variant="dark" className="mb-5">
+
+        
+
           <Navbar.Brand>Nintendo gaming</Navbar.Brand>
           
           <Nav>
@@ -37,16 +40,48 @@ const Routes = () => {
              
           
             <Nav className="mr-auto">
-            <NavDropdown title="Admin">
-            <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/deletecharacter">Slett spillfigur</NavDropdown.Item>
+            <NavDropdown title="Admin spill">
             <NavDropdown.Item as={Link} to="/deletegame">Slett spill</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/creategame">Legg til spill</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/updategame">Endre spill</NavDropdown.Item>
             </NavDropdown>
+
+
+            <Nav className="m1-auto">
+             <NavDropdown title="Admin spillfigur">
+             <NavDropdown.Item as={Link} to="/deletecharacter">Slett spillfigur</NavDropdown.Item>
+             </NavDropdown>
+
+            <Nav className="m2-auto2">
+             <NavDropdown title="Admin konsoll">
+             <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
+             </NavDropdown>
+
+        <br/>
+
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search"/>
+      
+    </form>
+      
+
+
+
+            </Nav>
+            
+
+            </Nav>
+
+
+            
+
           </Nav>
+         
           </Nav>
+          
         </Navbar>
+
+       
 <Container>
     <main>
 <Switch>
