@@ -3,8 +3,6 @@ import Game from '../components/game/Game';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 
-
-
 const AllGames = () => {
 
  const [ games, setGames ] = useState(
