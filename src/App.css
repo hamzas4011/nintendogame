@@ -20,6 +20,7 @@
 
 .content-wrap {
   padding-bottom: 2.5em;
+  min-height: 100vh; (100% of the viewport height)
 }
 
 .App-header {

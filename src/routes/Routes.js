@@ -17,6 +17,7 @@ import Home from '../views/Home';
 // Admin sidene blir henta her
 import DeleteGame from '../views/DeleteGame';
 import DeleteCharacter from '../views/DeleteCharacter';
+import DeleteConsole from '../views/DeleteConsole';
 import CreateGame from '../views/CreateGame';
 import UpdateGame from '../views/UpdateGame';
   
@@ -37,6 +38,7 @@ const Routes = () => {
           
             <Nav className="mr-auto">
             <NavDropdown title="Admin">
+            <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/deletecharacter">Slett spillfigur</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/deletegame">Slett spill</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/creategame">Legg til spill</NavDropdown.Item>
@@ -54,6 +56,7 @@ const Routes = () => {
     <Route path="/allconsoles" component={ AllConsoles }></Route>
     <Route path="/deletegame" component={ DeleteGame }></Route>
     <Route path="/deletecharacter" component={ DeleteCharacter }></Route>
+    <Route path="/deleteconsole" component={ DeleteConsole }></Route>
     <Route path="/creategame" component={ CreateGame }></Route>
     <Route path="/updategame" component={ UpdateGame }></Route>
 </Switch>

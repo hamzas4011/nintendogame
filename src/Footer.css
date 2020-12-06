@@ -4,10 +4,11 @@ margin-top: 3.1rem;
 padding: 0.5rem;
 color: white;
 background-color: rgb(240, 63, 63);
-position: static;
+position: relative;
 bottom: 0;
 left: 0;
 width: 100%;
+display: block;
 }
 
 

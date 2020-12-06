@@ -6,7 +6,6 @@ const Footer = () => (
         <div className="container">
             <div className="row">
 
-
                   <div classname="col-1">
                       <h4>Informasjon</h4>
                         <br/>
