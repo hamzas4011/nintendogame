@@ -20,6 +20,12 @@ import DeleteCharacter from '../views/DeleteCharacter';
 import DeleteConsole from '../views/DeleteConsole';
 import CreateGame from '../views/CreateGame';
 import UpdateGame from '../views/UpdateGame';
+
+import CreateCharacter from '../views/CreateCharacter';
+
+import CreateConsole from '../views/CreateConsole';
+
+import UpdateCharacter from '../views/UpdateCharacter';
   
 const Routes = () => {
 
@@ -50,22 +56,15 @@ const Routes = () => {
             <Nav className="m1-auto">
              <NavDropdown title="Admin spillfigur">
              <NavDropdown.Item as={Link} to="/deletecharacter">Slett spillfigur</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to="/createcharacter">Legg til spillfigur</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to="/updatecharacter">Endre spillfigur</NavDropdown.Item>
              </NavDropdown>
 
             <Nav className="m2-auto2">
              <NavDropdown title="Admin konsoll">
              <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to="/createconsole">Legg til spillkonsoll</NavDropdown.Item>
              </NavDropdown>
-
-        <br/>
-
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search"/>
-      
-    </form>
-      
-
-
 
             </Nav>
             
@@ -94,6 +93,9 @@ const Routes = () => {
     <Route path="/deleteconsole" component={ DeleteConsole }></Route>
     <Route path="/creategame" component={ CreateGame }></Route>
     <Route path="/updategame" component={ UpdateGame }></Route>
+    <Route path="/createcharacter" component={ CreateCharacter }></Route>
+    <Route path="/createconsole" component={ CreateConsole }></Route>
+    <Route path="/updatecharacter" component={ UpdateCharacter }></Route>
 </Switch>
 </main>
 </Container>

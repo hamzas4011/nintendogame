@@ -1,6 +1,6 @@
 import { Col, Card } from 'react-bootstrap';
 
-const Console = ( { id, name, age, weapon, strength, image}) => {
+const Character = ( { id, name, age, weapon, strength, image}) => {
     return (
        
         <Col>
@@ -18,4 +18,4 @@ const Console = ( { id, name, age, weapon, strength, image}) => {
     )
 }
 
-export default Console;
+export default Character;
