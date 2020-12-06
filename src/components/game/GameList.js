@@ -29,7 +29,6 @@ const GameList = () => {
                     <input onChange={searchGames} placeholder="Søk navn på spill..." type="text"></input>
                     </Col>
                 </Row>
-
                 <Row xl={ 3 }>
                     {generateGames()}
                 </Row>

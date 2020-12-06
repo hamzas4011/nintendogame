@@ -6,10 +6,9 @@ function App() {
   return (
        <div className="page-container">
          <div className="content-wrap">
-
        <Routes></Routes>
        </div>
-       <Footer/>
+      <Footer></Footer>
     </div>
   );
 }

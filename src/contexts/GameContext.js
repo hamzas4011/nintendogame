@@ -18,9 +18,7 @@ export const GameProvider = ( props ) => {
         axios.get( url )
              .then( response => {
                  setGames( response.data );
-
              } )
-
     }, [])
 
     return(

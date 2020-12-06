@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import GameDelete from '../components/game/GameDelete';
 import axios from 'axios';
+import { Row } from 'react-bootstrap';
 
-const DeleteGames = () => {
+const DeleteGame = () => {
 
     const [ games, setGames ] = useState( 
         [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
@@ -29,11 +30,13 @@ const DeleteGames = () => {
             <section>
                 <h3>Slett spill</h3>
                 <p>Antall Spill: { games.length }</p>  
+                <Row xs={2}>
                 { getGames() }
+                </Row>
             </section>
         )
    
 }
 
-export default DeleteGames;
+export default DeleteGame;
 

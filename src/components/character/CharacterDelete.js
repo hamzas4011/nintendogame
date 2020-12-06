@@ -1,11 +1,11 @@
 import axios from 'axios';
-import DeleteGame from '../../views/DeleteGame';
+import DeleteCharacter from '../../views/DeleteCharacter';
 import { Col, Card, Button } from 'react-bootstrap';
 
 
-const GameDelete = ( props ) => {
+const CharacterDelete = ( props ) => {
 
-     const DeleteGame = () => {
+     const DeleteCharacter = () => {
           const url = "https://localhost:5001/games";
         axios.delete(`${url}/${props.id}`);
      }
@@ -14,11 +14,12 @@ const GameDelete = ( props ) => {
         <Col>
              <Card>
             <h3>{ props.name }</h3>
-            <Button onClick={ DeleteGame }>Slett spill</Button>
+            <Button onClick={ DeleteCharacter }>Slett spillfigur</Button>
              </Card> 
          </Col>
          
     )
 }
 
-export default GameDelete;
+export default CharacterDelete;
+    

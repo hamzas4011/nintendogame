@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Footer.css';
 
@@ -6,8 +5,8 @@ const Footer = () => (
     <div className="main-footer">
         <div className="container">
             <div className="row">
-                
-               
+
+
                   <div classname="col-1">
                       <h4>Informasjon</h4>
                         <br/>
@@ -17,7 +16,7 @@ const Footer = () => (
                          <li>Blog</li>
                          </ul>
                   </div>
-                  
+
                          <hr/>
                         <div className="col-1">
                           <h4>Nintendo</h4>
@@ -41,10 +40,9 @@ const Footer = () => (
 
             </div>
         </div>
-       
+
        </div>
-        
+
     );
 
 export default Footer;
-

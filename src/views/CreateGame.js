@@ -22,8 +22,6 @@ const CreateGame = () => {
                 setImage( e.target.value );
                 break;
             default:
-
-
         }
     }
 

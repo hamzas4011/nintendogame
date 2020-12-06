@@ -3,7 +3,7 @@ import { Col, Card } from 'react-bootstrap';
 const Console = ( { id, name, year, price, image}) => {
     return (
         <Col>
-             <Card border="primary" height="500">
+             <Card className="text-center" border="primary" height="500">
                 <Card.Title>{ name }</Card.Title>
                 <Card.Subtitle> Id: {id}</Card.Subtitle>
                 <Card.Body>
@@ -15,7 +15,5 @@ const Console = ( { id, name, year, price, image}) => {
         </Col>
     )
 }
-
-
 
 export default Console;
