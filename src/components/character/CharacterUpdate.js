@@ -32,11 +32,6 @@ const CharacterUpdate = () => {
             <input 
             onChange={ (e) => setCharacter( {...characterState, name: e.target.value } ) } type="text" value={ characterState.name }></input>
 
-
-            <label>Navn</label>
-            <input 
-            onChange={ (e) => setCharacter( {...characterState, name: e.target.value } ) } type="text" value={ characterState.name }></input>
-
             <label>Bilde</label>
             <input 
             onChange={ (e) => setCharacter( {...characterState, image: e.target.value } ) } type="text" value={ characterState.image }></input>
