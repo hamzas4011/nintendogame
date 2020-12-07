@@ -45,11 +45,6 @@ const CreateGame = () => {
             <input id="price" onChange={ handleChange } type="number" value={ price }/>
             <label>Bilde</label>
             <input id="image" onChange={ handleChange }type="text" value={ image }/>
-            <label>Image:</label>
-            <img src={`https://localhost:5001/images/${gameState.image}`}/>
-            <input onChange={(e)=>setGame( {...gameState, image: e.target.files[0].name})} 
-                type="file"></input>
-            <input type="button" value="Last opp bilde"></input>
             <input onClick={ CreateGame } type="button" value="Lagre nytt spill"></input> 
         </section>
     )
