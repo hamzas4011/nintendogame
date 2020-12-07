@@ -38,7 +38,6 @@ const AllCharacters = () => {
                 </Row> 
             </section>
         )
-   
    }
    
    export default AllCharacters;
