@@ -30,9 +30,9 @@ const AllCharacters = () => {
         return (
             <section>
                 <h3>Alle Nintendo Spillfigurer</h3>
+                <p>Antall Spillfigurer: { characters.length }</p>   
                 <label>Søk</label>
                 <input onChange={searchCharacters} placeholder="Søk navn på spillfigur..." type="text"></input>
-                <p>Antall Spillfigurer: { characters.length }</p>   
                 <Row xs={3}>
                 { getCharacters() }
                 </Row> 

@@ -48,7 +48,7 @@ const CreateCharacter = () => {
             <label>Styrke</label>  
             <input id="strength" onChange={ handleChange } type="text" value={ strength }/>
             <label>Bilde</label>
-            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra databasen..." type="text" value={ image }/>
+            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra API..." type="text" value={ image }/>
             <input onClick={ CreateCharacter } type="button" value="Lagre ny spillfigur"></input> 
         </section>
     )

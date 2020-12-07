@@ -43,7 +43,7 @@ const CreateGame = () => {
             <label>Pris</label>  
             <input id="price" onChange={ handleChange } type="number" value={ price }/>
             <label>Bilde</label>
-            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra databasen..." type="text" value={ image }/>
+            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra API..." type="text" value={ image }/>
             <input onClick={ CreateGame } type="button" value="Lagre nytt spill"></input> 
         </section>
     )

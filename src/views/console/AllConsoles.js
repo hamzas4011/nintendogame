@@ -32,9 +32,9 @@ const AllConsoles = () => {
         return (
             <section>
                 <h3>Alle Nintendo konsoller</h3>
-                <label>Søk</label>
-                    <input onChange={searchConsoles} placeholder="Søk navn på konsoll..." type="text"></input>
                 <p>Antall konsoller: { consoles.length }</p>  
+                <label>Søk</label>
+                <input onChange={searchConsoles} placeholder="Søk navn på konsoll..." type="text"></input>
                 <Row xs={3}>
                 { getConsoles() }
                 </Row>
