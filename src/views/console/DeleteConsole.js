@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ConsoleDelete from '../components/console/ConsoleDelete';
+import ConsoleDelete from '../../components/console/ConsoleDelete';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 const DeleteConsole = () => {

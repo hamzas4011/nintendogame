@@ -1,6 +1,6 @@
-import { ConsoleProvider } from '../contexts/ConsoleContext';
-import ConsoleUpdate from '../components/console/ConsoleUpdate';
-import ConsoleList from '../components/console/ConsoleList';
+import { ConsoleProvider } from '../../contexts/ConsoleContext';
+import ConsoleUpdate from '../../components/console/ConsoleUpdate';
+import ConsoleList from '../../components/console/ConsoleList';
 
 const UpdateConsole = () => {
     return (

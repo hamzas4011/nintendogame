@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Console from '../components/console/Console';
+import Console from '../../components/console/Console';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 

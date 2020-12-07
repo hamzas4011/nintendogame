@@ -1,5 +1,4 @@
 import axios from 'axios';
-import DeleteConsole from '../../views/DeleteConsole';
 import { Col, Card, Button } from 'react-bootstrap';
 
 

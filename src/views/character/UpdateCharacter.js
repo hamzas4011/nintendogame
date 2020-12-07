@@ -1,6 +1,6 @@
-import { CharacterProvider } from '../contexts/CharacterContext';
-import CharacterUpdate from '../components/character/CharacterUpdate';
-import CharacterList from '../components/character/CharacterList';
+import { CharacterProvider } from '../../contexts/CharacterContext';
+import CharacterUpdate from '../../components/character/CharacterUpdate';
+import CharacterList from '../../components/character/CharacterList';
 
 const UpdateCharacter = () => {
     return (

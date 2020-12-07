@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import GameDelete from '../components/game/GameDelete';
+import GameDelete from '../../components/game/GameDelete';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 

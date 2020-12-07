@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Character from '../components/character/Character';
+import Character from '../../components/character/Character';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 

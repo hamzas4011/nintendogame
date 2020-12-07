@@ -1,14 +1,12 @@
-
-
 import { useState } from 'react';
 import axios from 'axios';
 const CreateCharacter = () => {
 
-    const [ name, setName ] = useState("F");
-    const [ age, setAge ] = useState("A");
-    const [ weapon, setWeapon ] = useState("Z");
-    const [ strength, setStrength ] = useState("O");
-    const [ image, setImage ] = useState("L")
+    const [ name, setName ] = useState("");
+    const [ age, setAge ] = useState("");
+    const [ weapon, setWeapon ] = useState("");
+    const [ strength, setStrength ] = useState("");
+    const [ image, setImage ] = useState("")
 
     const handleChange = ( e ) => {
         switch( e.target.id ){
@@ -50,7 +48,7 @@ const CreateCharacter = () => {
             <label>Styrke</label>  
             <input id="strength" onChange={ handleChange } type="text" value={ strength }/>
             <label>Bilde</label>
-            <input id="image" onChange={ handleChange }type="text" value={ image }/>
+            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra databasen..." type="text" value={ image }/>
             <input onClick={ CreateCharacter } type="button" value="Lagre ny spillfigur"></input> 
         </section>
     )

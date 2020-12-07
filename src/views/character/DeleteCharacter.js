@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import CharacterDelete from '../components/character/CharacterDelete';
+import CharacterDelete from '../../components/character/CharacterDelete';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 

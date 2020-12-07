@@ -4,11 +4,10 @@ import axios from 'axios';
 const CreateGame = () => {
 
     const [ name, setName ] = useState("");
-    const [ category, setCategory ] = useState("A");
-    const [ price, setPrice ] = useState("Z");
-    const [ image, setImage ] = useState("...Velg bilde fra databasen")
+    const [ category, setCategory ] = useState("");
+    const [ price, setPrice ] = useState("");
+    const [ image, setImage ] = useState("")
 
-    const [ gameState, setGame ] = useState("o")
     const handleChange = ( e ) => {
         switch( e.target.id ){
             case "name":
@@ -44,7 +43,7 @@ const CreateGame = () => {
             <label>Pris</label>  
             <input id="price" onChange={ handleChange } type="number" value={ price }/>
             <label>Bilde</label>
-            <input id="image" onChange={ handleChange }type="text" value={ image }/>
+            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra databasen..." type="text" value={ image }/>
             <input onClick={ CreateGame } type="button" value="Lagre nytt spill"></input> 
         </section>
     )

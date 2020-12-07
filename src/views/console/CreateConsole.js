@@ -5,10 +5,10 @@ import { useState } from 'react';
 import axios from 'axios';
 const CreateConsole = () => {
 
-    const [ name, setName ] = useState("F");
-    const [ year, setYear ] = useState("A");
-    const [ price, setPrice ] = useState("Z");
-    const [ image, setImage ] = useState("L")
+    const [ name, setName ] = useState("");
+    const [ year, setYear ] = useState("");
+    const [ price, setPrice ] = useState("");
+    const [ image, setImage ] = useState("")
 
     const handleChange = ( e ) => {
         switch( e.target.id ){
@@ -45,7 +45,7 @@ const CreateConsole = () => {
             <label>Pris</label>  
             <input id="price" onChange={ handleChange } type="number" value={ price }/>
             <label>Bilde</label>
-            <input id="image" onChange={ handleChange }type="text" value={ image }/>
+            <input id="image" onChange={ handleChange } placeholder="Velg bilde fra databasen..." type="text" value={ image }/>
             <input onClick={ CreateConsole } type="button" value="Lagre ny konsoll"></input> 
         </section>
     )

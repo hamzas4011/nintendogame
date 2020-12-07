@@ -9,21 +9,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 // Bruker sidene det her
-import AllCharacters from '../views/AllCharacters';
-import AllConsoles from '../views/AllConsoles';
-import AllGames from '../views/AllGames';
+import AllCharacters from '../views/character/AllCharacters';
+import AllConsoles from '../views/console/AllConsoles';
+import AllGames from '../views/game/AllGames';
 import Home from '../views/Home';
 
 // Admin sidene blir henta her
-import DeleteGame from '../views/DeleteGame';
-import DeleteCharacter from '../views/DeleteCharacter';
-import DeleteConsole from '../views/DeleteConsole';
-import CreateGame from '../views/CreateGame';
-import UpdateGame from '../views/UpdateGame';
-import CreateCharacter from '../views/CreateCharacter';
-import CreateConsole from '../views/CreateConsole';
-import UpdateCharacter from '../views/UpdateCharacter';
-import UpdateConsole from '../views/UpdateConsole';
+import DeleteGame from '../views/game/DeleteGame';
+import DeleteCharacter from '../views/character/DeleteCharacter';
+import DeleteConsole from '../views/console//DeleteConsole';
+import CreateGame from '../views/game/CreateGame';
+import UpdateGame from '../views/game/UpdateGame';
+import CreateCharacter from '../views/character/CreateCharacter';
+import CreateConsole from '../views/console/CreateConsole';
+import UpdateCharacter from '../views/character/UpdateCharacter';
+import UpdateConsole from '../views/console/UpdateConsole';
   
 const Routes = () => {
 

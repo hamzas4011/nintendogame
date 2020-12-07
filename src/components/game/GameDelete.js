@@ -1,5 +1,4 @@
 import axios from 'axios';
-import DeleteGame from '../../views/DeleteGame';
 import { Col, Card, Button } from 'react-bootstrap';
 
 

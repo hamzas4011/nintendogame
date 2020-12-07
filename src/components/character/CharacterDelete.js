@@ -1,5 +1,4 @@
 import axios from 'axios';
-import DeleteCharacter from '../../views/DeleteCharacter';
 import { Col, Card, Button } from 'react-bootstrap';
 
 

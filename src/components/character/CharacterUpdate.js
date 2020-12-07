@@ -2,6 +2,8 @@ import { CharacterContext } from '../../contexts/CharacterContext';
 import { useContext } from 'react';
 import axios from 'axios';
 
+
+
 const CharacterUpdate = () => {
 
     const { character, characters } = useContext( CharacterContext);

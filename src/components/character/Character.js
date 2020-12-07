@@ -1,8 +1,6 @@
 import { Col, Card } from 'react-bootstrap';
-
 const Character = ( { id, name, age, weapon, strength, image}) => {
     return (
-       
         <Col>
         <Card className="text-center" border="primary" height="500">
            <Card.Title>{name}</Card.Title>
