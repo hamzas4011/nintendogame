@@ -1,8 +1,8 @@
 import { Col, Card } from 'react-bootstrap';
 
+// Henter ut verdiene og bruker bootstrap card for design
 const Game = ( { id, name, category, price, image}) => {
     return (
-       
         <Col>
              <Card className="text-center" border="primary" height="500">
                 <Card.Title>{ name }</Card.Title>
@@ -14,7 +14,6 @@ const Game = ( { id, name, category, price, image}) => {
                 </Card.Body>
             </Card>
         </Col>
-
     )
 }
 export default Game;

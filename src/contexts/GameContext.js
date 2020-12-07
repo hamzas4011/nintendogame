@@ -1,6 +1,12 @@
 import { useEffect, useState, createContext } from 'react';
 import axios from 'axios';
 
+/*
+  Context filen deler informasjon med hvilken som helst komponents ved å lagre
+  den et sted og deretter gi tilgang til alle komponenter som ber om det.
+  Til vanlig kan man overføre kun data fra parent til child props.
+*/
+
 export const GameContext = createContext();
 
 export const GameProvider = ( props ) => {

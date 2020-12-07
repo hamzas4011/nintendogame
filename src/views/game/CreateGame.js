@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+    // Legge til ny spill i games databasen
+
 const CreateGame = () => {
 
     const [ name, setName ] = useState("");

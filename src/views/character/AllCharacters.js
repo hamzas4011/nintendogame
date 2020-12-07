@@ -34,7 +34,7 @@ const AllCharacters = () => {
                 <label>Søk</label>
                 <input onChange={searchCharacters} placeholder="Søk navn på spillfigur..." type="text"></input>
                 <Row xs={3}>
-                { getCharacters() }
+                   { getCharacters() }
                 </Row> 
             </section>
         )

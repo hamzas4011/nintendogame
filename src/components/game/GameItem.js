@@ -2,6 +2,7 @@ import { GameContext } from '../../contexts/GameContext';
 import { useContext } from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 
+// Alle spill item og bootstrap card
 const GameItem = ( { id, name, category, price, image } ) => {
 
     const { game } = useContext( GameContext );

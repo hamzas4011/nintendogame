@@ -28,7 +28,7 @@ const DeleteConsole = () => {
                 <h3>Slett Konsoll</h3>
                 <p>Antall Konsoll: { consoles.length }</p>  
                 <Row xs={2}>
-                { getconsoles() }
+                  { getconsoles() }
                 </Row>
             </section>
         )

@@ -1,12 +1,7 @@
-
 import React  from 'react';
 import { BrowserRouter , Switch, Route, Link } from 'react-router-dom';
-import { NavDropdown } from 'react-bootstrap';
-
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 
 // Bruker sidene det her
 import AllCharacters from '../views/character/AllCharacters';
@@ -14,40 +9,38 @@ import AllConsoles from '../views/console/AllConsoles';
 import AllGames from '../views/game/AllGames';
 import Home from '../views/Home';
 
-// Admin sidene blir henta her
+// Admin sidene her
 import DeleteGame from '../views/game/DeleteGame';
-import DeleteCharacter from '../views/character/DeleteCharacter';
-import DeleteConsole from '../views/console//DeleteConsole';
 import CreateGame from '../views/game/CreateGame';
 import UpdateGame from '../views/game/UpdateGame';
+
+import DeleteCharacter from '../views/character/DeleteCharacter';
 import CreateCharacter from '../views/character/CreateCharacter';
-import CreateConsole from '../views/console/CreateConsole';
 import UpdateCharacter from '../views/character/UpdateCharacter';
+
+import DeleteConsole from '../views/console//DeleteConsole';
+import CreateConsole from '../views/console/CreateConsole';
 import UpdateConsole from '../views/console/UpdateConsole';
   
+// Routes brukes for å navigere mellom sidene, linken
 const Routes = () => {
 
   return (
       <BrowserRouter>
-
-        <Navbar bg="danger" variant="dark" className="mb-5" expand={'lg'}>
-        
-          <Navbar.Brand>Nintendo gaming</Navbar.Brand>
-          
-          <Nav>
+          <Navbar bg="danger" variant="dark" className="mb-5" expand={'lg'}>
+            <Navbar.Brand>Nintendo gaming</Navbar.Brand>
+            <Nav>
             <Nav.Link as={Link} to="/">Hjem</Nav.Link>
             <Nav.Link as={Link} to="/allgames">Alle spill</Nav.Link>
             <Nav.Link as={Link} to="/allcharacters">Alle spillfigurer</Nav.Link>
             <Nav.Link as={Link} to="/allconsoles">Alle nintendo konsoller</Nav.Link>
              
-          
             <Nav className="mr-auto">
             <NavDropdown title="Admin spill">
             <NavDropdown.Item as={Link} to="/deletegame">Slett spill</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/creategame">Legg til spill</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/updategame">Endre spill</NavDropdown.Item>
             </NavDropdown>
-
 
             <Nav className="m1-auto">
              <NavDropdown title="Admin spillfigur">
@@ -59,7 +52,7 @@ const Routes = () => {
             <Nav className="m2-auto2">
              <NavDropdown title="Admin konsoll">
              <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
-             <NavDropdown.Item as={Link} to="/createconsole">Legg til spillkonsoll</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to="/createconsole">Legg til konsoll</NavDropdown.Item>
              <NavDropdown.Item as={Link} to="/updateconsole">Endre konsoll</NavDropdown.Item>
              </NavDropdown>
             </Nav>
@@ -67,9 +60,10 @@ const Routes = () => {
           </Nav>
           </Nav>
         </Navbar>  
+
 <Container>
     <main>
-<Switch>
+  <Switch>
     <Route exact path="/" component={ Home }></Route>
     <Route path="/allgames" component={ AllGames }></Route>
     <Route path="/allcharacters" component={ AllCharacters }></Route>

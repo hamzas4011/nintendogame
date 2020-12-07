@@ -3,6 +3,11 @@ import GameDelete from '../../components/game/GameDelete';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 
+  /*
+  Brukes for å slette spill. Koblet til games databasen slik 
+  man kan hente det og slette det.
+  */
+
 const DeleteGame = () => {
 
     const [ games, setGames ] = useState( 

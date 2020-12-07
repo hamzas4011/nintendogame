@@ -36,7 +36,7 @@ const AllConsoles = () => {
                 <label>Søk</label>
                 <input onChange={searchConsoles} placeholder="Søk navn på konsoll..." type="text"></input>
                 <Row xs={3}>
-                { getConsoles() }
+                   { getConsoles() }
                 </Row>
             </section>
         )

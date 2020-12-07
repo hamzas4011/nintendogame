@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { Col, Card, Button } from 'react-bootstrap';
 
-
 const ConsoleDelete = ( props ) => {
 
      const DeleteConsole = () => {
@@ -11,12 +10,11 @@ const ConsoleDelete = ( props ) => {
 
     return (
         <Col>
-             <Card>
+          <Card>
             <h3>{ props.name }</h3>
             <Button onClick={ DeleteConsole }>Slett konsoll</Button>
-             </Card> 
-         </Col>
-         
+           </Card> 
+         </Col>  
     )
 }
 

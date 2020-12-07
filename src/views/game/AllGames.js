@@ -3,6 +3,8 @@ import Game from '../../components/game/Game';
 import axios from 'axios';
 import { Row } from 'react-bootstrap';
 
+// Henter ut alle spill fra games databasen
+
 const AllGames = () => {
 
  const [ games, setGames ] = useState(
@@ -17,6 +19,13 @@ const AllGames = () => {
                    setGames( response.data  );
                })
     }, [])
+ 
+    /*
+          Her lagde vi en mulighet for bruker/admin for å søke etter
+          spillet man vil ha. Søke funksjon
+    */
+
+
  const getGames = () => {
     return games.filter(obj => obj.name.includes(filter)).map((game, i) => {
            return <Game key={ i } { ...game }></Game>
@@ -33,7 +42,7 @@ const AllGames = () => {
              <label>Søk</label>
              <input onChange={searchGames} placeholder="Søk navn på spill..." type="text"></input>
              <Row xs={3} >
-            {getGames()}
+                {getGames()}
             </Row>
          </section>
      )

@@ -1,6 +1,9 @@
 import { GameContext } from '../../contexts/GameContext';
 import { useContext } from 'react';
 import axios from 'axios';
+
+// Eksporterer til UpdateGame og gjør det mulig å endre spill
+
 const GameUpdate = () => {
 
     const { game, games } = useContext( GameContext);
@@ -12,8 +15,8 @@ const GameUpdate = () => {
         const url = "https://localhost:5001/games";
         axios.put(`${url}/${gameState.id}`, gameState)
         .then( response => {
-            let indexOfGame = gamesState.findIndex( shO => shO.id = gameState.id);
-            gamesState[indexOfGame] = gameState;
+        let indexOfGame = gamesState.findIndex( shO => shO.id = gameState.id);
+        gamesState[indexOfGame] = gameState;
             setGames([...gamesState]);
         })
     }
@@ -38,7 +41,7 @@ const GameUpdate = () => {
 
            <label>Pris</label>
             <input 
-            onChange={ (e) => setGame( {...gameState, price : e.target.value } ) } type="number" value={ gameState.price }></input>
+            onChange={ (e) => setGame( {...gameState, price : parseInt(e.target.value) } ) } type="number" value={ gameState.price }></input>
             <input onClick={ updateGame } type="button" value="Endre"></input>
         </section>
     )

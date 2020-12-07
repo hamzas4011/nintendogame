@@ -13,9 +13,9 @@ const ConsoleUpdate = () => {
         const url = "https://localhost:5001/consoles";
         axios.put(`${url}/${consoleState.id}`, consoleState)
         .then( response => {
-            let indexOfCharacter = consolesState.findIndex( shO => shO.id = consoleState.id);
-            consolesState[indexOfCharacter] = consoleState;
-            setConsoles([...consolesState]);
+        let indexOfCharacter = consolesState.findIndex( shO => shO.id = consoleState.id);
+        consolesState[indexOfCharacter] = consoleState;
+        setConsoles([...consolesState]);
         })
     }
 

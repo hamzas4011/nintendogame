@@ -2,8 +2,6 @@ import { CharacterContext } from '../../contexts/CharacterContext';
 import { useContext } from 'react';
 import axios from 'axios';
 
-
-
 const CharacterUpdate = () => {
 
     const { character, characters } = useContext( CharacterContext);
@@ -15,9 +13,9 @@ const CharacterUpdate = () => {
         const url = "https://localhost:5001/characters";
         axios.put(`${url}/${characterState.id}`, characterState)
         .then( response => {
-            let indexOfCharacter = charactersState.findIndex( shO => shO.id = characterState.id);
-            charactersState[indexOfCharacter] = characterState;
-            setCharacters([...charactersState]);
+        let indexOfCharacter = charactersState.findIndex( shO => shO.id = characterState.id);
+        charactersState[indexOfCharacter] = characterState;
+        setCharacters([...charactersState]);
         })
     }
 

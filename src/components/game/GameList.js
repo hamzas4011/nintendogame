@@ -3,6 +3,7 @@ import { useContext, useState} from 'react';
 import { GameContext } from '../../contexts/GameContext';
 import GameItem from './GameItem';
 
+// Henter ut alle spillene i gameitem i tillegg har vi søke funksjonen her
 const GameList = () => {
 
     const { games } = useContext( GameContext );

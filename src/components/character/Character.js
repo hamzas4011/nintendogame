@@ -1,4 +1,5 @@
 import { Col, Card } from 'react-bootstrap';
+
 const Character = ( { id, name, age, weapon, strength, image}) => {
     return (
         <Col>

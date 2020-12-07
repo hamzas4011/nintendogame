@@ -9,8 +9,7 @@ const ConsoleList = () => {
     const [ filter, setSearch] = useState("");
     const generateConsoles = () =>{
     return consolesState.filter(obj => obj.name.includes(filter)).map((consoles, i) => {
-
-        return <ConsoleItem key={i} {...consoles}></ConsoleItem>
+         return <ConsoleItem key={i} {...consoles}></ConsoleItem>
         }
     )
 }
