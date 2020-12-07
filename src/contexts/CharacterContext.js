@@ -4,7 +4,7 @@ import axios from 'axios';
 export const CharacterContext = createContext();
 export const CharacterProvider = ( props ) => {
 
-    const [ character, setCharacter ] = useState( {id: "dummyId", name: "DummyNintendo", age: "20", weapon: "dummyWeapon", strength: "dummyStrength"})
+    const [ character, setCharacter ] = useState( {id: "", name: "", image:"",  age: "", weapon: "", strength: ""})
 
     const [ characters, setCharacters ] = useState([
         { id: "78787878", name: "nite", age: "20", weapon: "weapon", strength: "strength"},

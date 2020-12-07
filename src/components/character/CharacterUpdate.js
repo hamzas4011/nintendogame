@@ -27,6 +27,12 @@ const CharacterUpdate = () => {
         <section>
             <h3>Endre Spillfigur</h3>
             <p>Klikk først på Oppdater-knappen til et av komponentene under, deretter kan du endre på spillfiguret.</p>
+
+            <label>Navn</label>
+            <input 
+            onChange={ (e) => setCharacter( {...characterState, name: e.target.value } ) } type="text" value={ characterState.name }></input>
+
+
             <label>Navn</label>
             <input 
             onChange={ (e) => setCharacter( {...characterState, name: e.target.value } ) } type="text" value={ characterState.name }></input>

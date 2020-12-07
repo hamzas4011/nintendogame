@@ -5,7 +5,7 @@ export const GameContext = createContext();
 
 export const GameProvider = ( props ) => {
 
-    const [ game, setGame ] = useState( {id: "dummyId", name: "DummyNintendo", category: "DummyType", price: "20"})
+    const [ game, setGame ] = useState( {id: "", name: "", image:"",  category: "", price: ""})
 
     const [ games, setGames ] = useState([
         { id: "78787878", name: "nite", category: "elfa", price: "30"},

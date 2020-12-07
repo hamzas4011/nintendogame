@@ -4,7 +4,7 @@ import axios from 'axios';
 export const ConsoleContext = createContext();
 export const ConsoleProvider = ( props ) => {
 
-    const [ console, setConsole ] = useState( {id: "dummyId", name: "DummyNintendo", year: "20", price: "dummyWeapon"})
+    const [ console, setConsole ] = useState( {id: "", name: "", image:"",  year: "", price: ""})
 
     const [ consoles, setConsoles ] = useState([
         { id: "78787878", name: "nite", year: "20", price:"140"},
