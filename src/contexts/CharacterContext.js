@@ -1,9 +1,7 @@
-
 import { useEffect, useState, createContext } from 'react';
 import axios from 'axios';
 
 export const CharacterContext = createContext();
-
 export const CharacterProvider = ( props ) => {
 
     const [ character, setCharacter ] = useState( {id: "dummyId", name: "DummyNintendo", age: "20", weapon: "dummyWeapon", strength: "dummyStrength"})
@@ -13,7 +11,6 @@ export const CharacterProvider = ( props ) => {
         { id: "87878787", name: "Cargo", age: "22", weapon: "weapon1", strength: "strength1"}
 
     ]);
-
     useEffect( () => {
         const url = "https://localhost:5001/characters";
         axios.get( url )
@@ -21,7 +18,6 @@ export const CharacterProvider = ( props ) => {
                  setCharacters( response.data );
              } )
     }, [])
-
     return(
         <CharacterContext.Provider value={ { characters: [ characters, setCharacters], character: [character, setCharacter] } }>
             { props.children }

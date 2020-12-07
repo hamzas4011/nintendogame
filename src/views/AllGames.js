@@ -8,7 +8,7 @@ const AllGames = () => {
  const [ games, setGames ] = useState(
      [ { id: "22", name: "ss", age: "55", category: "philip", price:"33", image: "mummy.png"} ] 
  );
-
+ const [ filter, setSearch] = useState("");
  
       useEffect( () => {
           const url = "https://localhost:5001/games";
@@ -18,15 +18,20 @@ const AllGames = () => {
                })
     }, [])
  const getGames = () => {
-       return games.map( ( game, i ) => {
+    return games.filter(obj => obj.name.includes(filter)).map((game, i) => {
            return <Game key={ i } { ...game }></Game>
        });
  }
- 
+ const searchGames = (e) =>{
+    setSearch(e.target.value);
+}
+
      return (
          <section>
              <h3>Alle Nintendo Spill</h3>
              <p>Antall Spill: { games.length }</p>  
+             <label>Søk</label>
+             <input onChange={searchGames} placeholder="Søk navn på spill..." type="text"></input>
              <Row xs={3} >
             {getGames()}
             </Row>

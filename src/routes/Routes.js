@@ -20,22 +20,18 @@ import DeleteCharacter from '../views/DeleteCharacter';
 import DeleteConsole from '../views/DeleteConsole';
 import CreateGame from '../views/CreateGame';
 import UpdateGame from '../views/UpdateGame';
-
 import CreateCharacter from '../views/CreateCharacter';
-
 import CreateConsole from '../views/CreateConsole';
-
 import UpdateCharacter from '../views/UpdateCharacter';
+import UpdateConsole from '../views/UpdateConsole';
   
 const Routes = () => {
 
   return (
       <BrowserRouter>
 
-        <Navbar bg="danger" variant="dark" className="mb-5">
-
+        <Navbar bg="danger" variant="dark" className="mb-5" expand={'lg'}>
         
-
           <Navbar.Brand>Nintendo gaming</Navbar.Brand>
           
           <Nav>
@@ -64,23 +60,13 @@ const Routes = () => {
              <NavDropdown title="Admin konsoll">
              <NavDropdown.Item as={Link} to="/deleteconsole">Slett konsoll</NavDropdown.Item>
              <NavDropdown.Item as={Link} to="/createconsole">Legg til spillkonsoll</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to="/updateconsole">Endre konsoll</NavDropdown.Item>
              </NavDropdown>
-
             </Nav>
-            
-
             </Nav>
-
-
-            
-
           </Nav>
-         
           </Nav>
-          
-        </Navbar>
-
-       
+        </Navbar>  
 <Container>
     <main>
 <Switch>
@@ -96,6 +82,7 @@ const Routes = () => {
     <Route path="/createcharacter" component={ CreateCharacter }></Route>
     <Route path="/createconsole" component={ CreateConsole }></Route>
     <Route path="/updatecharacter" component={ UpdateCharacter }></Route>
+    <Route path="/updateconsole" component={ UpdateConsole }></Route>
 </Switch>
 </main>
 </Container>

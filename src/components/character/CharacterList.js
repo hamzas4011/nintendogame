@@ -1,15 +1,12 @@
-
 import { Row, Col } from 'react-bootstrap';
 import { useContext, useState} from 'react';
 import { CharacterContext } from '../../contexts/CharacterContext';
 import CharacterItem from './CharacterItem';
 
 const CharacterList = () => {
-
     const { characters } = useContext( CharacterContext );
     const [ charactersState ] = characters;
     const [ filter, setSearch] = useState("");
-  
     const generateCharacters = () =>{
 
     return charactersState.filter(obj => obj.name.includes(filter)).map((characters, i) => {
@@ -21,7 +18,6 @@ const CharacterList = () => {
         const searchCharacters = (e) =>{
             setSearch(e.target.value);
         }
-
         return (
             <section>
                 <Row>
@@ -36,5 +32,4 @@ const CharacterList = () => {
             </section>
         )
 }
-
 export default CharacterList;

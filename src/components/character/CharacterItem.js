@@ -1,4 +1,3 @@
-
 import { CharacterContext } from '../../contexts/CharacterContext';
 import { useContext } from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
@@ -28,5 +27,4 @@ const CharacterItem = ( { id, name, age, weapon, strength, image } ) => {
         </Col>
     )
 }
-
 export default CharacterItem;

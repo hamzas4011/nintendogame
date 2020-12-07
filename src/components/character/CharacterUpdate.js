@@ -24,7 +24,7 @@ const CharacterUpdate = () => {
     return (
         <section>
             <h3>Endre Spillfigur</h3>
-            <p>Klikk først på Oppdater-knappen til et av komponentene under, deretter kan du endre på navnet på spillfiguret.</p>
+            <p>Klikk først på Oppdater-knappen til et av komponentene under, deretter kan du endre på spillfiguret.</p>
             <label>Navn</label>
             <input 
             onChange={ (e) => setCharacter( {...characterState, name: e.target.value } ) } type="text" value={ characterState.name }></input>
@@ -35,7 +35,7 @@ const CharacterUpdate = () => {
 
             <label>Alder</label>
             <input 
-            onChange={ (e) => setCharacter( {...characterState, age: e.target.value } ) } type="number" value={ characterState.age }></input>
+            onChange={ (e) => setCharacter( {...characterState, age: parseInt (e.target.value)} ) } type="number" value={ characterState.age }></input>
 
            <label>Våpen</label>
             <input 
@@ -46,9 +46,7 @@ const CharacterUpdate = () => {
             onChange={ (e) => setCharacter( {...characterState, strength: e.target.value } ) } type="text" value={ characterState.strength }></input>
 
              <input onClick={ updateCharacter } type="button" value="Endre"></input>
-
         </section>
     )
 }
-
 export default CharacterUpdate;

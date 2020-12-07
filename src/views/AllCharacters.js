@@ -8,6 +8,7 @@ const AllCharacters = () => {
     const [ characters, setCharacters ] = useState( 
         [ { id: "22", name: "ss", age: "2008", weapon:"33", strength: "jump", image: "mummy.png"} ] 
     );
+    const [ filter, setSearch] = useState("");
     
          useEffect( () => {
              const url = "https://localhost:5001/characters";
@@ -18,14 +19,19 @@ const AllCharacters = () => {
        }, [])
    
     const getCharacters = () => {
-          return characters.map( ( character, i ) => {
+        return characters.filter(obj => obj.name.includes(filter)).map((character, i) => {
               return <Character key={ i } { ...character }></Character>
           });
     }
     
+    const searchCharacters = (e) =>{
+        setSearch(e.target.value);
+    }
         return (
             <section>
                 <h3>Alle Nintendo Spillfigurer</h3>
+                <label>Søk</label>
+                <input onChange={searchCharacters} placeholder="Søk navn på spillfigur..." type="text"></input>
                 <p>Antall Spillfigurer: { characters.length }</p>   
                 <Row xs={3}>
                 { getCharacters() }
