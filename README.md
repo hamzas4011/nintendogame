@@ -7,7 +7,7 @@
 ---
 
 ## 🌟 About the Project  
-This fullstack project was created for the course **Webutvikling 3** in collaboration with my classmate, **Fazal**. The application is a website featuring a collection of Nintendo games, allowing users to interact with the games through various features.  
+This fullstack project was created during the course **Webutvikling 3** as part of my bachelor's degree program. In collaboration with my classmate, **Fazal**, we developed a website featuring a collection of Nintendo games, allowing users to interact with the games through various features.  
 
 ### Key Features:  
 - 🎮 **Game List:** Browse and explore Nintendo games with detailed information.  
@@ -25,8 +25,4 @@ This fullstack project was created for the course **Webutvikling 3** in collabor
 - **Frontend:** React.js  
 - **Backend:** C# with CRUD operations  
 
-This project showcases a complete fullstack solution, combining frontend and backend development to deliver a user-friendly and functional application.  
-
----  
-
-Thank you for exploring this project! 🎮✨  
+This project showcases a complete fullstack solution, integrating frontend and backend development to deliver a functional and user-friendly application.  
