@@ -7,22 +7,26 @@
 ---
 
 ## 🌟 About the Project  
-This fullstack project was created for the course **Webutvikling 3** in collaboration with my classmate, **Fazal**. It focuses on building a game-related application inspired by Nintendo.  
+This fullstack project was created for the course **Webutvikling 3** in collaboration with my classmate, **Fazal**. The application is a website featuring a collection of Nintendo games, allowing users to interact with the games through various features.  
 
 ### Key Features:  
 - 🎮 **Game List:** Browse and explore Nintendo games with detailed information.  
 - ⭐ **Game Rating:** Users can rate games to provide feedback.  
-- 🛒 **Wishlist/Cart:** Add games to a wishlist or shopping cart for future reference.  
-- 🔄 **Fullstack Functionality:**  
-  - The **frontend** was built using **React.js** for an interactive user interface.  
-  - The **backend**, developed in **C#**, provides full **CRUD** (Create, Read, Update, Delete) functionality and manages game data and user interactions.  
-  - The backend project is maintained in a separate repository:  
-    [NintendoGameApi](https://github.com/hamzas4011/NintendoGameApi).  
+- ➕ **Add New Games:** Users can add new games to the list.  
+- ❌ **Delete Games:** Remove games from the list.  
+
+### Fullstack Functionality:  
+- The **frontend** was developed using **React.js** to create a dynamic and interactive interface.  
+- The **backend**, built with **C#**, provides full **CRUD** (Create, Read, Update, Delete) operations to manage game data.  
+- The backend project is maintained in a separate repository:  
+  [NintendoGameApi](https://github.com/hamzas4011/NintendoGameApi).  
 
 ### Technology Stack:  
 - **Frontend:** React.js  
-- **Backend:** C# with CRUD operations
-- **Fullstack Integration:** Communication between frontend and backend    
+- **Backend:** C# with CRUD operations  
 
-This project demonstrates skills in both frontend and backend development for a fullstack application.  
+This project showcases a complete fullstack solution, combining frontend and backend development to deliver a user-friendly and functional application.  
 
+---  
+
+Thank you for exploring this project! 🎮✨  
